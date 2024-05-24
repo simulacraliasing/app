@@ -1,0 +1,11 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("electron-serve"), require("electron-store"), require("@esmj/monitor"), require("systeminformation"), require("node-machine-id"), require("axios"), require("@tensorflow/tfjs"));
+	else if(typeof define === 'function' && define.amd)
+		define(["electron-serve", "electron-store", "@esmj/monitor", "systeminformation", "node-machine-id", "axios", "@tensorflow/tfjs"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("electron-serve"), require("electron-store"), require("@esmj/monitor"), require("systeminformation"), require("node-machine-id"), require("axios"), require("@tensorflow/tfjs")) : factory(root["electron-serve"], root["electron-store"], root["@esmj/monitor"], root["systeminformation"], root["node-machine-id"], root["axios"], root["@tensorflow/tfjs"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(global, (__WEBPACK_EXTERNAL_MODULE__9440__, __WEBPACK_EXTERNAL_MODULE__1662__, __WEBPACK_EXTERNAL_MODULE__4386__, __WEBPACK_EXTERNAL_MODULE__6449__, __WEBPACK_EXTERNAL_MODULE__6438__, __WEBPACK_EXTERNAL_MODULE__2742__, __WEBPACK_EXTERNAL_MODULE__1055__) => {
+return 
